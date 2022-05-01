@@ -4,15 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
-// using TMPro;
 
-public class QuizManager : MonoBehaviour
-{
+public class QuizManager : MonoBehaviour {
     public List<QuestionAndAnswers> QnA;
     public GameObject[] options;
+    
+    string[] images = {"airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger"};
+    Sprite FULLHP;
 
-    public int currentQuestion;
+    public int currentQuestion = 0;
+    public int numberQuestions = 0;
 
     public GameObject QuizPanel;
     public GameObject GoPanel;
@@ -20,14 +21,12 @@ public class QuizManager : MonoBehaviour
     public Text ScoreText;
     int totalQuestions = 0;
     public int score;
- 
+
+    public Sprite m_Sprite;
     public Text QuestionText;
-    // [SerializeField] TextMeshProUGUI QuestionText;
 
     private void Start() {
         totalQuestions = QnA.Count;
-        Debug.Log(QnA.Count);
-        Debug.Log(totalQuestions);
         GoPanel.SetActive(false);
         generateQuestion();
     }
@@ -41,7 +40,7 @@ public class QuizManager : MonoBehaviour
     void GameOver() {
         ScoreText.text = score + " / " + totalQuestions;
         QuizPanel.SetActive(false);
-        GoPanel.SetActive(true); 
+        GoPanel.SetActive(true);
     }
 
     public void retry() {
@@ -64,9 +63,11 @@ public class QuizManager : MonoBehaviour
     }
 
     void generateQuestion() {
+        FULLHP = Resources.Load<Sprite> (images[numberQuestions]);
+        QuizPanel.GetComponent<Image> ().sprite = FULLHP;
         if (QnA.Count > 0) { 
-            currentQuestion = Random.Range(0, QnA.Count);
             QuestionText.text = QnA[currentQuestion].Question;
+            numberQuestions++;
             setAnswers();
         } else {
             Debug.Log("Out of Questions");
