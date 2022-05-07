@@ -29,6 +29,7 @@ public class QuizManager : MonoBehaviour {
         totalQuestions = QnA.Count;
         GoPanel.SetActive(false);
         generateQuestion();
+        // SceneManager.UnloadSceneAsync("StartingManager");
     }
 
     public void correct() {
