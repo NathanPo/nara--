@@ -15,6 +15,10 @@ public class QuizManager : MonoBehaviour {
     public int currentQuestion = 0;
     public int numberQuestions = 0;
 
+    public GameObject questionsGameObject;
+    public GameObject resultGameObject;
+    public Text resultText;
+
     public GameObject QuizPanel;
     public GameObject GoPanel;
 
@@ -29,10 +33,23 @@ public class QuizManager : MonoBehaviour {
         totalQuestions = QnA.Count;
         GoPanel.SetActive(false);
         generateQuestion();
-        // SceneManager.UnloadSceneAsync("StartingManager");
     }
 
     public void correct() {
+        if (QnA[currentQuestion].result.Length != 0) {
+            questionsGameObject.SetActive(false);
+            resultGameObject.SetActive(true);
+            resultText.text = QnA[currentQuestion].result[0];
+        } else {
+            score += 1;
+            QnA.RemoveAt(currentQuestion);
+            generateQuestion();
+        }
+    }
+
+    public void nextQuestion() {
+        questionsGameObject.SetActive(true);
+        resultGameObject.SetActive(false);
         score += 1;
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
