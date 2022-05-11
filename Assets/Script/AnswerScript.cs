@@ -3,21 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AnswerScript : MonoBehaviour {
-    public string id;
+    public int id;
     public QuizManager quizManager;
 
-    // public void Answer() {
-    //     if (isCorrect) {
-    //         Debug.Log("Correct Answer");
-    //         quizManager.correct();
-    //     } else {
-    //         Debug.Log("Wrong Answer");
-    //         quizManager.wrong();
-    //     }
-    // }
+    public void Answer() {
+        Debug.Log("Clicked");
+        quizManager.whichButton(id);
+    }
 
     public void nextQuestion() {
-            Debug.Log("Next question");
-            quizManager.nextQuestion();
+        Debug.Log("Next question");
+        quizManager.nextQuestion();
     }
 }

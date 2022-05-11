@@ -5,7 +5,7 @@
             "story": "Prend un policier à l'areoport",
             "questions": ["famille", "travail"],
             "responses": [],
-            "redirections": [],
+            "redirections": [2, 2],
             "image": 1
         },{
             "id": 2,
@@ -65,7 +65,7 @@
             "image": 9
         }, {
             "id": 10,
-            "story": "Tu te retouve dans une petites routes discrete",
+            "story": "Tu te retouve sur une petite routes discrete",
             "questions": ["Tu continus a pied"],
             "responses": ["Tu te prends une balle dans le dos tu meurs snif"],
             "redirections": [],

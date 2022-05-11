@@ -15,23 +15,16 @@ public class QuizManager : MonoBehaviour {
 
     public TextAsset textJSON;
     public GameObject[] options;
-    
-    string[] images = {"airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger"};
+    // Prendre d'autre image correspondant au situation
+    string[] images = {"airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger","airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger"};
     Sprite backgroundImages;
-
-    public int currentQuestion = 1;
-    public int numberOfQuestions = 0;
-
+    private int currentQuestion;
+    private int numberOfQuestions;
     public GameObject questionsGameObject;
     public GameObject resultGameObject;
     public Text resultText;
-
     public GameObject QuizPanel;
     public GameObject GoPanel;
-
-    // public Text ScoreText;
-    // int totalQuestions = 0;
-    public int score;
     public Text QuestionText;
     private Questions questionsList;
     private Question fooItem;
@@ -39,59 +32,59 @@ public class QuizManager : MonoBehaviour {
     private void Start() {
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
         numberOfQuestions = questionsList.questions.Count();
+        currentQuestion = 1;
         GoPanel.SetActive(false);
         generateQuestion();
-    }
-
-    public void correct() {
-        // if (myQuestionList[currentQuestion].responses.Length > 0) {
-        //     questionsGameObject.SetActive(false);
-        //     resultGameObject.SetActive(true);
-        //     resultText.text = myQuestionList[currentQuestion].responses[0];
-        // } else {
-        //     score += 1;
-        //     myQuestionList.RemoveAt(currentQuestion);
-        //     generateQuestion();
-        // }
-    }
-
-    public void wrong() {
-        // if (myQuestionList[currentQuestion].responses.Length > 1) {
-        //     questionsGameObject.SetActive(false);
-        //     resultGameObject.SetActive(true);
-        //     resultText.text = myQuestionList[currentQuestion].responses[1];
-        // } else {
-        //     myQuestionList.RemoveAt(currentQuestion);
-        //     generateQuestion();
-        // }
-        
     }
 
     public void nextQuestion() {
         questionsGameObject.SetActive(true);
         resultGameObject.SetActive(false);
-        score += 1;
-        // questionsList.RemoveAt(currentQuestion);
         generateQuestion();
     }
 
     void GameOver() {
-        // ScoreText.text = score + " / " + totalQuestions;
-        // QuizPanel.SetActive(false);
-        // GoPanel.SetActive(true);
+        QuizPanel.SetActive(false);
+        GoPanel.SetActive(true);
     }
 
     public void retry() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
+    
     void setAnswers() {
-        for (int i = 0; i < options.Length; i++) {
-            // options[i].GetComponent<AnswerScript>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<Text>().text = fooItem.questions[i];
-        //     // if (myQuestionList[currentQuestion].CorrectAnswer == i+1) {
-        //     //     options[i].GetComponent<AnswerScript>().isCorrect = true;
-        //     // }
+        if (fooItem.questions.Length == 2) {
+            options[0].SetActive(true);
+            options[1].SetActive(true);
+            options[2].SetActive(false);
+            options[0].transform.GetChild(0).GetComponent<Text>().text = fooItem.questions[0];
+            options[1].transform.GetChild(0).GetComponent<Text>().text = fooItem.questions[1];
+        } else {
+            options[0].SetActive(false);
+            options[1].SetActive(false);
+            options[2].SetActive(true);
+            options[2].transform.GetChild(0).GetComponent<Text>().text = fooItem.questions[0];
+        }
+    }
+
+    public void whichButton(int id) {
+        if (fooItem.redirections.Length == 0) {
+            currentQuestion = 0;
+        } else {
+            currentQuestion = fooItem.redirections[id];
+        }
+
+        if (fooItem.responses.Length > 0) {
+            questionsGameObject.SetActive(false);
+            resultGameObject.SetActive(true);
+            if (fooItem.responses.Length > 1) {
+                resultText.text = fooItem.responses[id];
+            } else {
+                resultText.text = fooItem.responses[0];
+            }
+            
+        } else {
+            generateQuestion();
         }
     }
     
@@ -101,21 +94,14 @@ public class QuizManager : MonoBehaviour {
     }
 
     void generateQuestion() {
-        setBackgroundImage();
-        Debug.Log("test");
-        fooItem = Array.Find(this.questionsList.questions, q => q.id == 1);
-        Debug.Log(fooItem);
-
-        QuestionText.text = fooItem.story;
-        setAnswers();
-        
-        // if (myQuestionList.Count > 0) { 
-        //     QuestionText.text = myQuestionList[currentQuestion].story;
-        //     numberQuestions++;
-        //     setAnswers();
-        // } else {
-        //     Debug.Log("Out of Questions");
-        //     GameOver();
-        // }
+        if (currentQuestion != 0) {
+            setBackgroundImage();
+            fooItem = Array.Find(this.questionsList.questions, q => q.id == currentQuestion);
+            QuestionText.text = fooItem.story;
+            setAnswers();
+        } else {
+            Debug.Log("Out of Questions");
+            GameOver();
+        }
     }
 }
