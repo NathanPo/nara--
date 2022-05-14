@@ -6,77 +6,99 @@
             "questions": ["famille", "travail"],
             "responses": [],
             "redirections": [2, 2],
-            "image": 1
+            "image": 1,
+            "newCourse": true,
+            "carStartingSound": [""]
         },{
             "id": 2,
             "story": "Prend un le mafieu. Tu l'emmene a un endroit, il te dis d'attendre. Tu le vois qui parle avec un mec puis sors un flingue et une fusillade commence",
             "questions": ["Tu t'enfuis", "Tu ne bouges pas"],
             "responses": ["Tu traces à fond comme jamais", "Pendant la fusillade, une balle te pète un feu arrière. Le mafieu s'en sort vivant  et est content que tu sois resté. Tu es gracemment payé par le mafieu."],
             "redirections": [3, 4],
-            "image": 2
+            "image": 2,
+            "newCourse": true,
+            "carStartingSound": [""]
         }, {
             "id": 3,
             "story": "Un keuf t'arretes parceque tu roules super vite",
             "questions": ["Tu dis la vérité", "Tu mens"],
             "responses": ["Tu es mis sur écoutes, Il te dis qui appeler si tu revois le mafieu ect..."],
             "redirections": [6, 5],
-            "image": 3
+            "image": 3,
+            "newCourse": true,
+            "carStartingSound": [""]
         }, {
             "id": 4,
             "story": "Un keuf t'arretes parceque tu a un feu pété",
             "questions": ["Tu dis la vérité", "Tu mens"],
             "responses": ["Tu es mis sur écoutes, Il te dis qui appeler si tu revois le mafieu ect..."],
             "redirections": [6, 5],
-            "image": 4
+            "image": 4,
+            "newCourse": true,
+            "carStartingSound": [""]
         }, {
             "id": 5,
             "story": "Il te crois pas, tu riques de perdre ton permis",
             "questions": ["Tu dis la vérité", "Tu lui donne le gros billet du mafieu"],
             "responses": ["Tu es mis sur écoutes, Il te dis qui appeler si tu revois le mafieu ect...", "Il te laisse partir comme s'il avait rien vu"],
-            "redirections": [6, 6],
-            "image": 5
+            "redirections": [6, 7],
+            "image": 5,
+            "newCourse": false,
+            "carStartingSound": [""]
         }, {
             "id": 6,
             "story": "Tu prends une meuf dans ton taxi",
             "questions": ["Lui parler"],
             "responses": ["Elle te dis qu'elle fugue"],
             "redirections": [7],
-            "image": 6
+            "image": 6,
+            "newCourse": true,
+            "carStartingSound": [""]
         }, {
             "id": 7,
             "story": "Une voiture te suis, elle klaxone et te fais des appels de phares. La meuf te dis que c'est son père et te demande de le semer",
             "questions": ["Tu traces", "Tu t'arretes"],
             "responses": ["Une course poursuite s'engage", "Le gars descent de sa voiture et rentredans ton taxi, c'est le mafieu."],
             "redirections": [9, 8],
-            "image": 7
+            "image": 7,
+            "newCourse": false,
+            "carStartingSound": [""]
         }, {
             "id": 8,
             "story": "La meuf voit des flics et cris au secours par la fenetre. Le mafieu sort un flingue et t'oblige a tracer",
             "questions": ["Tu traces"],
             "responses": ["Une course poursuite s'engage"],
             "redirections": [9],
-            "image": 8
+            "image": 8,
+            "newCourse": false,
+            "carStartingSound": [""]
         }, {
             "id": 9,
             "story": "Tu es poursuivi",
             "questions": ["Tu te caches", "Tu vas encore plus vite"],
             "responses": [],
             "redirections": [10, 11],
-            "image": 9
+            "image": 9,
+            "newCourse": true,
+            "carStartingSound": [""]
         }, {
             "id": 10,
             "story": "Tu te retouve sur une petite routes discrete",
             "questions": ["Tu continus a pied"],
             "responses": ["Tu te prends une balle dans le dos tu meurs snif"],
             "redirections": [],
-            "image": 10
+            "image": 10,
+            "newCourse": false,
+            "carStartingSound": [""]
         }, {
             "id": 11,
             "story": "T'as plus d'essence ou sinon tu fais un giga tonneau",
             "questions": ["Tu continus a pied"],
             "responses": ["Tu te prends une balle dans le dos tu meurs snif"],
             "redirections": [],
-            "image": 11
+            "image": 11,
+            "newCourse": false,
+            "carStartingSound": [""]
         }
     ]
 }
