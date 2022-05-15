@@ -21,6 +21,7 @@ public class QuizManager : MonoBehaviour {
     private int currentQuestionId;
     private int numberOfQuestions;
     private int currentCourse;
+    private int buttonClickedId;
     public GameObject questionsGameObject;
     public GameObject resultGameObject;
     public Text resultText;
@@ -29,6 +30,8 @@ public class QuizManager : MonoBehaviour {
     public GameObject newCoursePanel;
     public Text newCourseText;
     public Text QuestionText;
+    public AudioClip[] songs;
+    public AudioSource audioSource;
     private Questions questionsList;
     private Question currentQuestion;
 
@@ -37,15 +40,48 @@ public class QuizManager : MonoBehaviour {
         numberOfQuestions = questionsList.questions.Count();
         currentQuestionId = 1;
         currentCourse = 0;
+        buttonClickedId = 0;
         GoPanel.SetActive(false);
         generateQuestion();
     }
+
+    public void playSound() {
+        disableButton();
+        audioSource.clip = songs[currentQuestion.songsId[buttonClickedId]];
+        audioSource.Play();
+        StartCoroutine(WaitForAudio(audioSource));
+        
+    }
+
+    private IEnumerator WaitForAudio(AudioSource clip) {
+        while (clip.isPlaying) {
+            yield return null;
+        }
+        Debug.Log("This happens when the audioSource has finished playing");
+        enableButton();
+        afterClickerOnQuestionButton();
+    }
+
+    void disableButton() {
+        options[0].GetComponent<Button>().interactable = false;
+        options[1].GetComponent<Button>().interactable = false;
+        options[2].GetComponent<Button>().interactable = false;
+    }
+
+    void enableButton() {
+        options[0].GetComponent<Button>().interactable = true;
+        options[1].GetComponent<Button>().interactable = true;
+        options[2].GetComponent<Button>().interactable = true;
+    }
+
+    // Button.interactable = false;
+    // Button.enabled = false;
 
     public void nextQuestion() {
         questionsGameObject.SetActive(true);
         resultGameObject.SetActive(false);
         generateQuestion();
-    }
+    } 
 
     public void nextCourse() {
         resultGameObject.SetActive(false);
@@ -78,26 +114,47 @@ public class QuizManager : MonoBehaviour {
         }
     }
 
-    void displayNewCourse() {
-        currentCourse++;
+    void displayNewCoursePanel() {
         QuizPanel.SetActive(false);
         GoPanel.SetActive(false);
         newCoursePanel.SetActive(true);
+    }
+
+    void displayNewCourse() {
+        currentCourse++;
+        displayNewCoursePanel();
         newCourseText.text = "Course n°" + currentCourse;
     }
 
-    public void whichButton(int id) {
+    void setQuestionId(int id) {
         if (currentQuestion.redirections.Length == 0) {
             currentQuestionId = 0;
         } else {
             currentQuestionId = currentQuestion.redirections[id];
         }
+    }
+
+    void displayResponse() {
+        questionsGameObject.SetActive(false);
+        resultGameObject.SetActive(true);
+    }
+
+    public void setButtonId(int id) {
+        this.buttonClickedId = id;
+        if (currentQuestion.songsId.Length > 0) {
+            playSound();
+        } else {
+            afterClickerOnQuestionButton();
+        }
+    }
+
+    void afterClickerOnQuestionButton() {
+        setQuestionId(buttonClickedId);
 
         if (currentQuestion.responses.Length > 0) {
-            questionsGameObject.SetActive(false);
-            resultGameObject.SetActive(true);
+            displayResponse();
             if (currentQuestion.responses.Length > 1) {
-                resultText.text = currentQuestion.responses[id];
+                resultText.text = currentQuestion.responses[buttonClickedId];
             } else {
                 resultText.text = currentQuestion.responses[0];
             }

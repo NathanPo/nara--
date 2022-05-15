@@ -156,10 +156,10 @@ RectTransform:
   m_Father: {fileID: 411596765}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.4984131, y: -315}
-  m_SizeDelta: {x: 1699, y: 372}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -0.005126953, y: 275}
+  m_SizeDelta: {x: 0.4000244, y: 372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &74288373
 GameObject:
@@ -196,10 +196,10 @@ RectTransform:
   m_Father: {fileID: 331519557}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 86}
-  m_SizeDelta: {x: 1700, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 272}
+  m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74288375
 MonoBehaviour:
@@ -291,10 +291,10 @@ RectTransform:
   m_Father: {fileID: 5217746}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -127}
-  m_SizeDelta: {x: 522.358, y: 96.061}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 59}
+  m_SizeDelta: {x: 658.358, y: 96.061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &91409819
 MonoBehaviour:
@@ -452,10 +452,10 @@ RectTransform:
   m_Father: {fileID: 737541207}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00048828, y: 0}
+  m_SizeDelta: {x: 742.22, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &104924404
 MonoBehaviour:
@@ -489,10 +489,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
-  m_Text: 'THIS ONE
-
-'
+    m_LineSpacing: 1
+  m_Text: THIS ONE
 --- !u!222 &104924405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -536,8 +534,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 264.26874}
-  m_SizeDelta: {x: 1896.654, y: 300}
+  m_AnchoredPosition: {x: 0, y: -213.75021}
+  m_SizeDelta: {x: 0, y: 427.5005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &170593910
 CanvasRenderer:
@@ -579,7 +577,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
+    m_LineSpacing: 1
   m_Text: "Course N\xB0X"
 --- !u!1 &192152140
 GameObject:
@@ -614,10 +612,10 @@ RectTransform:
   m_Father: {fileID: 1493271569}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 840, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192152142
 MonoBehaviour:
@@ -651,10 +649,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
-  m_Text: 'THIS ONE
-
-'
+    m_LineSpacing: 1
+  m_Text: THIS ONE
 --- !u!222 &192152143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -702,8 +698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -209}
-  m_SizeDelta: {x: 728.347, y: 110}
+  m_AnchoredPosition: {x: 0, y: 161}
+  m_SizeDelta: {x: 546.3469, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320535827
 MonoBehaviour:
@@ -863,10 +859,10 @@ RectTransform:
   m_Father: {fileID: 411596765}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -315}
-  m_SizeDelta: {x: 1700, y: 372}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 220}
+  m_SizeDelta: {x: -238, y: 372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &337614876
 GameObject:
@@ -1046,10 +1042,10 @@ RectTransform:
   m_Father: {fileID: 5217746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.49997}
-  m_SizeDelta: {x: 0, y: 371}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 186.24997}
+  m_SizeDelta: {x: -84.825195, y: 371.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403046078
 MonoBehaviour:
@@ -1430,20 +1426,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 50
+    m_MinSize: 5
+    m_MaxSize: 70
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: 'RETRY
-
-'
+  m_Text: Recommencer
 --- !u!222 &654748217
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1491,8 +1485,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: -111}
-  m_SizeDelta: {x: 840, y: 150}
+  m_AnchoredPosition: {x: 355.78604, y: -112}
+  m_SizeDelta: {x: 670.428, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737541208
 MonoBehaviour:
@@ -1680,17 +1674,15 @@ MonoBehaviour:
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 0
+    m_MinSize: 5
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
-  m_Text: 'Prendre la course
-
-'
+    m_LineSpacing: 1
+  m_Text: Prendre la course
 --- !u!222 &806158699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1709,6 +1701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 940874620}
   - component: {fileID: 940874619}
+  - component: {fileID: 940874621}
   m_Layer: 0
   m_Name: QuizManager
   m_TagString: Untagged
@@ -1741,6 +1734,9 @@ MonoBehaviour:
   newCoursePanel: {fileID: 1746470086}
   newCourseText: {fileID: 170593911}
   QuestionText: {fileID: 1375118075}
+  songs:
+  - {fileID: 8300000, guid: cb7c96bde567245f7b861ccc58448b57, type: 3}
+  audioSource: {fileID: 940874621}
 --- !u!4 &940874620
 Transform:
   m_ObjectHideFlags: 0
@@ -1756,6 +1752,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &940874621
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940874618}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &981748447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,10 +1881,10 @@ RectTransform:
   m_Father: {fileID: 91409818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: -0.00021362305}
-  m_SizeDelta: {x: -0.00048828, y: 0.00053406}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.00024414062, y: 47.999786}
+  m_SizeDelta: {x: 657.9995, y: 96.000534}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981748449
 MonoBehaviour:
@@ -1819,17 +1911,15 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 5
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
-  m_Text: 'CONTINUE
-
-'
+    m_LineSpacing: 1
+  m_Text: CONTINUE
 --- !u!222 &981748450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1877,8 +1967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -430, y: -109}
-  m_SizeDelta: {x: 840, y: 150}
+  m_AnchoredPosition: {x: -353.78604, y: -112}
+  m_SizeDelta: {x: 670.428, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1068547168
 MonoBehaviour:
@@ -2036,10 +2126,10 @@ RectTransform:
   m_Father: {fileID: 650514845}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1244712514
 GameObject:
@@ -2078,10 +2168,10 @@ RectTransform:
   m_Father: {fileID: 1086107575}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 840, y: 220}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 290}
+  m_SizeDelta: {x: 650, y: 141.98193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244712516
 MonoBehaviour:
@@ -2181,7 +2271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9695706, b: 0.16509432, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2269,7 +2359,7 @@ MonoBehaviour:
     m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 0
+    m_MinSize: 5
     m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2277,9 +2367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WHICH IS THE CORRECT ANSWER ?
-
-'
+  m_Text: WHICH IS THE CORRECT ANSWER ?
 --- !u!222 &1375118076
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2325,10 +2413,10 @@ RectTransform:
   m_Father: {fileID: 331519557}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 840, y: 150}
+  m_SizeDelta: {x: -860, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493271570
 MonoBehaviour:
@@ -2516,7 +2604,7 @@ MonoBehaviour:
     m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 0
+    m_MinSize: 5
     m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2524,9 +2612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WHICH IS THE CORRECT ANSWER ?
-
-'
+  m_Text: WHICH IS THE CORRECT ANSWER ?
 --- !u!222 &1702649449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2568,10 +2654,10 @@ RectTransform:
   m_Father: {fileID: 650514845}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1776949352
 GameObject:
@@ -2608,8 +2694,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 264.2687}
-  m_SizeDelta: {x: 1896.654, y: 300}
+  m_AnchoredPosition: {x: 0, y: -272.825}
+  m_SizeDelta: {x: 0, y: 545.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776949354
 MonoBehaviour:
@@ -2624,7 +2710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2643,8 +2729,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
-  m_Text: 4 / 20
+    m_LineSpacing: 1
+  m_Text: "Vous \xEAtes mort."
 --- !u!222 &1776949355
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2686,10 +2772,10 @@ RectTransform:
   m_Father: {fileID: 1068547167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007896873
 MonoBehaviour:
@@ -2723,10 +2809,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0
-  m_Text: 'THIS ONE
-
-'
+    m_LineSpacing: 1
+  m_Text: THIS ONE
 --- !u!222 &2007896874
 CanvasRenderer:
   m_ObjectHideFlags: 0

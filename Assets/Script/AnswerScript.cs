@@ -8,7 +8,7 @@ public class AnswerScript : MonoBehaviour {
 
     public void Answer() {
         Debug.Log("Clicked");
-        quizManager.whichButton(id);
+        quizManager.setButtonId(id);
     }
 
     public void nextQuestion() {
