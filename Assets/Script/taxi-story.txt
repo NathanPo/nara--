@@ -6,9 +6,9 @@
             "questions": ["famille", "travail"],
             "responses": [],
             "redirections": [2, 2],
-            "image": 1,
+            "image": 0,
             "newCourse": true,
-            "songsId": [0, 0]
+            "songsId": []
         },{
             "id": 2,
             "story": "Prend un le mafieu. Tu l'emmene a un endroit, il te dis d'attendre. Tu le vois qui parle avec un mec puis sors un flingue et une fusillade commence",
@@ -17,7 +17,7 @@
             "redirections": [3, 4],
             "image": 2,
             "newCourse": true,
-            "songsId": []
+            "songsId": [1]
         }, {
             "id": 3,
             "story": "Un keuf t'arretes parceque tu roules super vite",

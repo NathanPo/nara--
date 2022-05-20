@@ -1483,10 +1483,10 @@ RectTransform:
   m_Father: {fileID: 331519557}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 355.78604, y: -112}
-  m_SizeDelta: {x: 670.428, y: 150}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -375.96304, y: 75}
+  m_SizeDelta: {x: 751.926, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737541208
 MonoBehaviour:
@@ -1736,6 +1736,7 @@ MonoBehaviour:
   QuestionText: {fileID: 1375118075}
   songs:
   - {fileID: 8300000, guid: cb7c96bde567245f7b861ccc58448b57, type: 3}
+  - {fileID: 8300000, guid: 95a54339b556f44bfa62f6fb2313e8f4, type: 3}
   audioSource: {fileID: 940874621}
 --- !u!4 &940874620
 Transform:
@@ -1965,10 +1966,10 @@ RectTransform:
   m_Father: {fileID: 331519557}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353.78604, y: -112}
-  m_SizeDelta: {x: 670.428, y: 150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 374.7141, y: 75}
+  m_SizeDelta: {x: 749.428, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1068547168
 MonoBehaviour:

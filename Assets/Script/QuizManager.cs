@@ -50,7 +50,6 @@ public class QuizManager : MonoBehaviour {
         audioSource.clip = songs[currentQuestion.songsId[buttonClickedId]];
         audioSource.Play();
         StartCoroutine(WaitForAudio(audioSource));
-        
     }
 
     private IEnumerator WaitForAudio(AudioSource clip) {
@@ -73,9 +72,6 @@ public class QuizManager : MonoBehaviour {
         options[1].GetComponent<Button>().interactable = true;
         options[2].GetComponent<Button>().interactable = true;
     }
-
-    // Button.interactable = false;
-    // Button.enabled = false;
 
     public void nextQuestion() {
         questionsGameObject.SetActive(true);
@@ -141,8 +137,17 @@ public class QuizManager : MonoBehaviour {
 
     public void setButtonId(int id) {
         this.buttonClickedId = id;
+
+        // Play music condition a definir un array de int pas la meilleur solution..
+        // peut etre deux champs différent.. ou un nombre pour dire pas de musique
         if (currentQuestion.songsId.Length > 0) {
-            playSound();
+            if (buttonClickedId == 1 && currentQuestion.songsId.Length == 2) {
+                
+            } else if (buttonClickedId == 0) {
+                playSound();
+            } else {
+                afterClickerOnQuestionButton();
+            }
         } else {
             afterClickerOnQuestionButton();
         }
@@ -163,7 +168,7 @@ public class QuizManager : MonoBehaviour {
         }
     }
     void setBackgroundImage() {
-        backgroundImages = Resources.Load<Sprite>(images[currentQuestionId]);
+        backgroundImages = Resources.Load<Sprite>(images[currentQuestion.image]);
         QuizPanel.GetComponent<Image>().sprite = backgroundImages;
     }
 
