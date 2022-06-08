@@ -137,7 +137,6 @@ public class QuizManager : MonoBehaviour {
 
     public void setButtonId(int id) {
         this.buttonClickedId = id;
-
         // Play music condition a definir un array de int pas la meilleur solution..
         // peut etre deux champs différent.. ou un nombre pour dire pas de musique
         if (currentQuestion.songsId.Length > 0) {
@@ -174,9 +173,9 @@ public class QuizManager : MonoBehaviour {
 
     void generateQuestion() {
         if (currentQuestionId != 0) {
-            setBackgroundImage();
             currentQuestion = Array.Find(this.questionsList.questions, q => q.id == currentQuestionId);
             QuestionText.text = currentQuestion.story;
+            setBackgroundImage();
             setAnswers();
             if (currentQuestion.newCourse == true) { displayNewCourse(); }
         } else {
