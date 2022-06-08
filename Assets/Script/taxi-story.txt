@@ -2,87 +2,169 @@
     "questions": [
         {
             "id": 1,
-            "story": "Prend un policier à l'areoport",
-            "questions": ["famille", "travail"],
-            "responses": [],
-            "redirections": [2, 2],
+            "story": "Tu es nouveau sur l'application de covoiturage. Tu as quitté ton boulot ennuyeux à la recherche de nouvelles experiences. Tu vas rencontrer des personnalités très spéciales. Une grande aventure t'attend ! Tu as ta première course. Le client t'attends à l'areoport.",
+            "questions": ["Prendre la course", "Refuser la course"],
+            "responses": ["Tu te met en route", "Tu as bien raison, c'est t'as première course, il faut la choisir avec précotion."],
+            "redirections": [3, 2],
             "image": 0,
             "newCourse": true,
             "songsId": []
-        },{
+        },
+	  {
             "id": 2,
-            "story": "Prend un le mafieu. Tu l'emmene a un endroit, il te dis d'attendre. Tu le vois qui parle avec un mec puis sors un flingue et une fusillade commence",
-            "questions": ["Tu t'enfuis", "Tu ne bouges pas"],
-            "responses": ["Tu traces à fond comme jamais", "Pendant la fusillade, une balle te pète un feu arrière. Le mafieu s'en sort vivant  et est content que tu sois resté. Tu es gracemment payé par le mafieu."],
-            "redirections": [3, 4],
-            "image": 2,
+            "story": " Oh! Voilà une nouvelle course.",
+            "questions": ["Prendre la course", "Refuser la course"],
+            "responses": ["Et c'est partie pour le tout premier client", "Décidemment tu es difficile."],
+            "redirections": [3, 2],
+            "image": 0,
             "newCourse": true,
-            "songsId": [1]
-        }, {
+            "songsId": []
+        },
+	  {
             "id": 3,
+            "story": "Un homme t'attends avec sa grosse valise. Tu l'aide as mettre ses affaires dans le coffre et une fois qu'il est bien installer tu demarre la voiture. Un silence dure déjà depuis quelques minutes et il faudrait mieux parler au client si tu ne veux pas une mauvaise note. Quel sujet veux-tu aborder?",
+            "questions": ["Famille", "Travail"],
+            "responses": [],
+            "redirections": [4, 5],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 4,
+            "story": "Tu lui demande : Alors qu'est-ce qui vous ammène ici? Vous venez voir de la famille? Il te réponds que justemment il a quitté sa famille pour travailler ici.",
+            "questions": ["Quel type de travail?", "Ah ok cool"],
+            "responses": [],
+            "redirections": [5, 5],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 5,
+            "story": "Il te dit qu'il est enqueteur et qu'il a été appelé ici pour démenteller un gros réseau mafieu. Il te dit que d'ailleur dans ton boulot tu devrais pouvoir rencontrer tout type de personne et que si tu avais des information, tu pourrais lui faire parvenir.",
+            "questions": ["Tu aquiesces et tu prends son contact", "Ca parait trop risqué, tu lui dit que ce n'est pas une bonne idée"],
+            "responses": [],
+            "redirections": [6, 6],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 6,
+            "story": "Bon, t'as première course est fini. Tu t'en es bien sorti on dirait que tu est fais pour ce boulot. C'est pas tout mais tu as des enfants a nourir, aller on enchaine avec la prochaine course. Il y en a justemment une à 5min d'ici. Tu y vas et tu prends un nouveau client et tu commence à sociabiliser.",
+            "questions": ["Famille", "Travail"],
+            "responses": [],
+            "redirections": [7,7],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 7,
+            "story": "Tu n'as aucune réponse. Tu regardes ton le retroviseur voir si tout va bien et tu croise son regard. L'homme n'inspire pas vraiment l'air commode. Voyant que tu le regardes il te dis de te concentrer sur la route. Après ce voyage bien silencieux tu arrives a destination. La il te dit de l'attendre 5 minutes",
+            "questions": ["Non je dois faire d'autre course", "Ok mais 5 minutes alors"],
+            "responses": [],
+            "redirections": [8, 10],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 8,
+            "story": "Il te regarde, fronce les sourcils. Il te dit que si tu dois partir, lui il garde la voiture. Est-ce que tu te laisse impressionner?",
+            "questions": ["Accepter de rester 5 minutes", "Appeler la police pour avoir de l'aide"],
+            "responses": [],
+            "redirections": [10, 9],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 9,
+            "story": "Tu sors ton portable",
+            "questions": ["Composer le numéro de la police"],
+            "responses": ["Ca n'as pas vraiment plu au client. A priori il n'ai pas vraiment amis avec la police. Il sort une arme et te tire une balle dans la tete"],
+            "redirections": [],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 10,
+            "story": "Il te souris l'air satisfait et te dis qu'il te faira un bon pourboire pour remecier ta compréhension. Tu le vois aller au bout de la rue à la rencontre d'un autre homme. Le temps commence a etre long et les 5 minutes sont largement depassées quand tout d'un ton client sort une arme et abat son interlocuteur",
+            "questions": ["Tu prends peur et tu décide de partir", "Tu prends le riques de rester mais tu t'allonges pour pas te prendre de balle perdu"],
+            "responses": ["Tu met les plein gazs et tu fonces le plus loin possible", "La fusillade semble etre fini. Tu relève la tete. Tu est sains et sauf mais ta voiture à pris une balle dans le phare arrière. Ton client est revenu et te dis qu'il a noté ta plaque. Il semble vouloir te faire comprendre que si tu parles de quoi que ce soit à quelqu'un il s'occupera de te faire taire. Il remonte dans ta voiture et tu n'as pas vraiment d'autre choix que de le rammener"],
+            "redirections": [11, 12],
+            "image": 0,
+            "newCourse": true,
+            "songsId": []
+        },
+	  {
+            "id": 11,
             "story": "Un keuf t'arretes parceque tu roules super vite",
             "questions": ["Tu dis la vérité", "Tu mens"],
             "responses": ["Tu es mis sur écoutes, Il te dis qui appeler si tu revois le mafieu ect..."],
-            "redirections": [6, 5],
+            "redirections": [14, 13],
             "image": 3,
             "newCourse": true,
             "songsId": []
         }, {
-            "id": 4,
+            "id": 12,
             "story": "Un keuf t'arretes parceque tu a un feu pété",
             "questions": ["Tu dis la vérité", "Tu mens"],
             "responses": ["Tu es mis sur écoutes, Il te dis qui appeler si tu revois le mafieu ect..."],
-            "redirections": [6, 5],
+            "redirections": [14, 13],
             "image": 4,
             "newCourse": true,
             "songsId": []
         }, {
-            "id": 5,
+            "id": 13,
             "story": "Il te crois pas, tu riques de perdre ton permis",
             "questions": ["Tu dis la vérité", "Tu lui donne le gros billet du mafieu"],
             "responses": ["Tu es mis sur écoutes, Il te dis qui appeler si tu revois le mafieu ect...", "Il te laisse partir comme s'il avait rien vu"],
-            "redirections": [6, 7],
+            "redirections": [14 , 15],
             "image": 5,
             "newCourse": false,
             "songsId": []
         }, {
-            "id": 6,
+            "id": 14,
             "story": "Tu prends une meuf dans ton taxi",
             "questions": ["Lui parler"],
             "responses": ["Elle te dis qu'elle fugue"],
-            "redirections": [7],
+            "redirections": [15],
             "image": 6,
             "newCourse": true,
             "songsId": []
         }, {
-            "id": 7,
+            "id": 15,
             "story": "Une voiture te suis, elle klaxone et te fais des appels de phares. La meuf te dis que c'est son père et te demande de le semer",
             "questions": ["Tu traces", "Tu t'arretes"],
             "responses": ["Une course poursuite s'engage", "Le gars descent de sa voiture et rentredans ton taxi, c'est le mafieu."],
-            "redirections": [9, 8],
+            "redirections": [17, 16],
             "image": 7,
             "newCourse": false,
             "songsId": []
         }, {
-            "id": 8,
+            "id": 16,
             "story": "La meuf voit des flics et cris au secours par la fenetre. Le mafieu sort un flingue et t'oblige a tracer",
             "questions": ["Tu traces"],
             "responses": ["Une course poursuite s'engage"],
-            "redirections": [9],
+            "redirections": [17],
             "image": 8,
             "newCourse": false,
             "songsId": []
         }, {
-            "id": 9,
+            "id": 17,
             "story": "Tu es poursuivi",
             "questions": ["Tu te caches", "Tu vas encore plus vite"],
             "responses": [],
-            "redirections": [10, 11],
+            "redirections": [18, 19],
             "image": 9,
             "newCourse": true,
             "songsId": []
         }, {
-            "id": 10,
+            "id": 18,
             "story": "Tu te retouve sur une petite routes discrete",
             "questions": ["Tu continus a pied"],
             "responses": ["Tu te prends une balle dans le dos tu meurs snif"],
@@ -91,7 +173,7 @@
             "newCourse": false,
             "songsId": []
         }, {
-            "id": 11,
+            "id": 19,
             "story": "T'as plus d'essence ou sinon tu fais un giga tonneau",
             "questions": ["Tu continus a pied"],
             "responses": ["Tu te prends une balle dans le dos tu meurs snif"],
