@@ -7,7 +7,6 @@
             "responses": ["Tu te met en route", "Tu as bien raison, c'est t'as première course, il faut la choisir avec précotion."],
             "redirections": [3, 2],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -17,7 +16,6 @@
             "responses": ["Et c'est partie pour le tout premier client", "Décidemment tu es difficile."],
             "redirections": [3, 2],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -27,7 +25,6 @@
             "responses": [],
             "redirections": [4, 5],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -37,7 +34,6 @@
             "responses": [],
             "redirections": [5, 5],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -47,7 +43,6 @@
             "responses": [],
             "redirections": [6, 6],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -57,7 +52,6 @@
             "responses": [],
             "redirections": [7,7],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -67,7 +61,6 @@
             "responses": [],
             "redirections": [8, 10],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -77,7 +70,6 @@
             "responses": [],
             "redirections": [10, 9],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -87,7 +79,6 @@
             "responses": ["Ca n'as pas vraiment plu au client. A priori il n'ai pas vraiment amis avec la police. Il sort une arme et te tire une balle dans la tete"],
             "redirections": [],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -97,7 +88,6 @@
             "responses": ["Tu met les plein gazs et tu fonces le plus loin possible", "La fusillade semble etre fini. Tu relève la tete. Tu est sains et sauf mais ta voiture à pris une balle dans le phare arrière. Ton client est revenu et te dis qu'il a noté ta plaque. Il semble vouloir te faire comprendre que si tu parles de quoi que ce soit à quelqu'un il s'occupera de te faire taire. Il remonte dans ta voiture et tu n'as pas vraiment d'autre choix que de le rammener. En partant il te donne une grosse liasse de billet pour te remercier de ta discretion"],
             "redirections": [11, 12],
             "image": 0,
-            "newCourse": true,
             "songsId": []
         },
 	  {
@@ -107,7 +97,6 @@
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation."],
             "redirections": [14, 13],
             "image": 3,
-            "newCourse": true,
             "songsId": []
         }, {
             "id": 12,
@@ -116,7 +105,6 @@
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation."],
             "redirections": [14, 13],
             "image": 4,
-            "newCourse": true,
             "songsId": []
         }, {
             "id": 13,
@@ -125,7 +113,6 @@
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'était ton premier client. Vous commencez a entretenir une bonne relation."],
             "redirections": [14 , 15],
             "image": 5,
-            "newCourse": false,
             "songsId": []
         },
         {
@@ -135,7 +122,6 @@
             "responses": [],
             "redirections": [15],
             "image": 6,
-            "newCourse": true,
             "songsId": []
         },
         {
@@ -145,7 +131,6 @@
             "responses": ["Elle hésite quelques seconde avant de te répondre. Elle commence à te raconter qu'elle essait de fuir sa maison pour commencer une nouvelle vie loin de son passé... Mais elle n'a pas le temps de finir sa phrase, une voiture juste derrière toi klaxone avec insistance."],
             "redirections": [16], 
             "image": 6,
-            "newCourse": true,
             "songsId": []
         },
         {
@@ -155,7 +140,6 @@
             "responses": ["Tu accelère mais la voiture continue de suivre", "Tu expliques à ta cliente que tu prefères respecter les limites de vitesse pour éviter les accident. Tu penses que le dialogue résoud les problèmes et tu attends que le conducteur vienne à ta fenêtre."],
             "redirections": [18, 17],
             "image": 7,
-            "newCourse": false,
             "songsId": []
         },
         {
@@ -165,7 +149,6 @@
             "responses": ["Tu ouvre la porte. L'homme est reconnaissant. Quand soudain ta cliente se met a crier au secours par la fenêtre. Une voiture de police qui passait juste à quelque mètres déclenche sa sirène. L'homme rentre immédiatemment dans ta voiture et te met un pistolet sur la tempe. Il te dit de t'enfuir et tu n'as pas d'autre choix de t'executer. Derrière toi la police te suit toujours.", "Tu fais mine d'ouvrir la porte et d'un coup de redémarre la voiture. Bravo très bonne stratégie. Tu as gagner quelque seconde et tu roules maintenant à toute vitesse. Tu jettes un coup d'oeuil derrière toi, l'homme à eu le temps de remonter dans sa voiture et te suit de près."],
             "redirections": [18, 18],
             "image": 8,
-            "newCourse": false,
             "songsId": []
         },
         {
@@ -175,7 +158,6 @@
             "responses": [],
             "redirections": [19, 20],
             "image": 8,
-            "newCourse": false,
             "songsId": []
         },
         {
@@ -185,7 +167,6 @@
             "responses": ["Tu n'écoutes pas et tu continues à courir. Tu commences à entendre des coups de feu. D'un coup tu t'éfondre par terre, tu regardes ta poitrine, elle est en sang. Tu as été touché par une balle et tu perds connaissance.", "Tu t'arretes et au même moment tu entends un coup de feu. D'un coup tu t'éfondre par terre, tu regardes ta poitrine, elle est en sang. Tu as été touché par une balle et tu perds connaissance."],
             "redirections": [],
             "image": 10,
-            "newCourse": false,
             "songsId": []
         }, {
             "id": 20,
@@ -194,7 +175,6 @@
             "responses": ["Tu regarde le rétroviseur et il semble en effet que tu sois sorti d'affaire. Mais au moment ou tu regarde à nouveau la route une voiture venant de la droite te rentre dedans. Le choc est très violent et tu perds connaissance."],
             "redirections": [],
             "image": 11,
-            "newCourse": false,
             "songsId": []
         }
     ]

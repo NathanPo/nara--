@@ -7,6 +7,5 @@ public class Question {
     public string[] responses;
     public int[] redirections;
     public int image;
-    public bool newCourse;
     public int[] songsId;
 }

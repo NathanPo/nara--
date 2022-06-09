@@ -23,15 +23,12 @@ public class QuizManager : MonoBehaviour {
     Sprite backgroundImages;
     private int currentQuestionId;
     private int numberOfQuestions;
-    private int currentCourse;
     private int buttonClickedId;
     public GameObject questionsGameObject;
     public GameObject resultGameObject;
     public Text resultText;
     public GameObject QuizPanel;
     public GameObject GoPanel;
-    public GameObject newCoursePanel;
-    public Text newCourseText;
     public Text QuestionText;
     public AudioClip[] songs;
     public AudioSource audioSource;
@@ -45,7 +42,6 @@ public class QuizManager : MonoBehaviour {
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
         numberOfQuestions = questionsList.questions.Count();
         currentQuestionId = 1;
-        currentCourse = 0;
         buttonClickedId = 0;
         GoPanel.SetActive(false);
         generateQuestion();
@@ -90,12 +86,6 @@ public class QuizManager : MonoBehaviour {
         generateQuestion();
     } 
 
-    public void nextCourse() {
-        resultGameObject.SetActive(false);
-        newCoursePanel.SetActive(false);
-        questionsGameObject.SetActive(true);
-        QuizPanel.SetActive(true);
-    }
 
     void GameOver() {
         QuizPanel.SetActive(false);
@@ -119,18 +109,6 @@ public class QuizManager : MonoBehaviour {
             options[2].SetActive(true);
             options[2].transform.GetChild(0).GetComponent<Text>().text = currentQuestion.questions[0];
         }
-    }
-
-    void displayNewCoursePanel() {
-        QuizPanel.SetActive(false);
-        GoPanel.SetActive(false);
-        newCoursePanel.SetActive(true);
-    }
-
-    void displayNewCourse() {
-        currentCourse++;
-        displayNewCoursePanel();
-        newCourseText.text = "Course n°" + currentCourse;
     }
 
     void setQuestionId(int id) {
@@ -188,7 +166,6 @@ public class QuizManager : MonoBehaviour {
             QuestionText.text = currentQuestion.story;
             setBackgroundImage();
             setAnswers();
-            if (currentQuestion.newCourse == true) { displayNewCourse(); }
         } else {
             GameOver();
         }

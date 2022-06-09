@@ -15,9 +15,4 @@ public class AnswerScript : MonoBehaviour {
         Debug.Log("Next question");
         quizManager.nextQuestion();
     }
-
-    public void nextCourse() {
-        Debug.Log("Next course");
-        quizManager.nextCourse();
-    }
 }
