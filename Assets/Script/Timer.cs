@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour {
         ResetTimer () ;
     }
 
-    private void ResetTimer () {
+    public void ResetTimer () {
       uiText.text = "00:00" ;
       uiFillImage.fillAmount = 0f;
 
