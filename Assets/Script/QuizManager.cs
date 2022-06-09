@@ -34,8 +34,6 @@ public class QuizManager : MonoBehaviour {
     private Question currentQuestion;
 
     public Timer timer1;
-    // Utiliser ça pour incrementer la barre de la police 
-    // setHealth(2);
 
     private void Start() {
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
@@ -45,6 +43,11 @@ public class QuizManager : MonoBehaviour {
         GoPanel.SetActive(false);
         timer1.SetDuration(45).Begin();
         generateQuestion();
+    }
+
+    void resetAndStartTimer() {
+        timer1.SetDuration(35).Begin();
+        timer1.ResetTimer();
     }
 
     public void playSound() {

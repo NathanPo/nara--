@@ -22,9 +22,9 @@ public class Timer : MonoBehaviour {
 
     private void ResetTimer () {
       uiText.text = "00:00" ;
-      uiFillImage.fillAmount = 0f ;
+      uiFillImage.fillAmount = 0f;
 
-      Duration = remainingDuration = 0 ;
+      Duration = remainingDuration = 0;
    }
 
     public Timer SetDuration (int seconds) {
