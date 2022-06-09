@@ -3,7 +3,7 @@
         {
             "id": 1,
             "story": "Tu es nouveau sur l'application de covoiturage. Tu as quitté ton boulot ennuyeux à la recherche de nouvelles experiences. Tu vas rencontrer des personnalités très spéciales. Une grande aventure t'attend ! Tu as ta première course. Le client t'attends à l'areoport.",
-            "questions": ["Prendre la course", "Refuser la course"],
+            "questions": ["PRENDRE LA COURSE", "REFUSER LA COURSE"],
             "responses": ["Tu te met en route", "Tu as bien raison, c'est t'as première course, il faut la choisir avec précotion."],
             "redirections": [3, 2],
             "image": 0,
@@ -12,7 +12,7 @@
 	  {
             "id": 2,
             "story": "Oh! Voilà une nouvelle course.",
-            "questions": ["Prendre la course", "Refuser la course"],
+            "questions": ["PRENDRE LA COURSE", "REFUSER LA COURSE"],
             "responses": ["Et c'est partie pour le tout premier client", "Décidemment tu es difficile."],
             "redirections": [3, 2],
             "image": 0,
@@ -21,7 +21,7 @@
 	  {
             "id": 3,
             "story": "Un homme t'attends avec sa grosse valise. Tu l'aide as mettre ses affaires dans le coffre et une fois qu'il est bien installer tu demarre la voiture. Un silence dure déjà depuis quelques minutes et il faudrait mieux parler au client si tu ne veux pas une mauvaise note. Quel sujet veux-tu aborder?",
-            "questions": ["Famille", "Travail"],
+            "questions": ["FAMILLE", "TRAVAIL"],
             "responses": [],
             "redirections": [4, 5],
             "image": 0,
@@ -30,7 +30,7 @@
 	  {
             "id": 4,
             "story": "Tu lui demande : Alors qu'est-ce qui vous ammène ici? Vous venez voir de la famille? Il te réponds que justemment il a quitté sa famille pour travailler ici.",
-            "questions": ["Quel type de travail?", "Ah ok cool"],
+            "questions": ["QUEL TYPE DE TRAVAIL ?", "AH OK COOL"],
             "responses": [],
             "redirections": [5, 5],
             "image": 0,
@@ -39,7 +39,7 @@
 	  {
             "id": 5,
             "story": "Il te dit qu'il est enqueteur et qu'il a été appelé ici pour démenteller un gros réseau mafieu. Il te dit que d'ailleur dans ton boulot tu devrais pouvoir rencontrer tout type de personne et que si tu avais des information, tu pourrais lui faire parvenir.",
-            "questions": ["Tu aquiesces et tu prends son contact", "Ca parait trop risqué, tu lui dit que ce n'est pas une bonne idée"],
+            "questions": ["PRENDRE SON CONTACT", "DIRE QUE CA NE PARAIT PAS ETRE UNE BONNE IDEE"],
             "responses": [],
             "redirections": [6, 6],
             "image": 0,
@@ -48,7 +48,7 @@
 	  {
             "id": 6,
             "story": "Bon, t'as première course est fini. Tu t'en es bien sorti on dirait que tu est fais pour ce boulot. C'est pas tout mais tu as des enfants a nourir, aller on enchaine avec la prochaine course. Il y en a justemment une à 5min d'ici. Tu y vas et tu prends un nouveau client et tu commence à sociabiliser.",
-            "questions": ["Famille", "Travail"],
+            "questions": ["FAMILLE", "TRAVAIL"],
             "responses": [],
             "redirections": [7,7],
             "image": 0,
@@ -57,7 +57,7 @@
 	  {
             "id": 7,
             "story": "Tu n'as aucune réponse. Tu regardes ton le retroviseur voir si tout va bien et tu croise son regard. L'homme n'inspire pas vraiment l'air commode. Voyant que tu le regardes il te dis de te concentrer sur la route. Après ce voyage bien silencieux tu arrives a destination. La il te dit de l'attendre 5 minutes",
-            "questions": ["Non je dois faire d'autre course", "Ok mais 5 minutes alors"],
+            "questions": ["NON JE DOIS FAIRE D'AUTRE COURSES", "OK MAIS 5 MINUTES ALORS"],
             "responses": [],
             "redirections": [8, 10],
             "image": 0,
@@ -66,7 +66,7 @@
 	  {
             "id": 8,
             "story": "Il te regarde, fronce les sourcils. Il te dit que si tu dois partir, lui il garde la voiture. Est-ce que tu te laisse impressionner?",
-            "questions": ["Accepter de rester 5 minutes", "Appeler la police pour avoir de l'aide"],
+            "questions": ["ACCEPTER DE RESTER 5 MINUTES", "APPELER LA POLICE POUR AVOIR DE L'AIDE"],
             "responses": [],
             "redirections": [10, 9],
             "image": 0,
@@ -75,7 +75,7 @@
 	  {
             "id": 9,
             "story": "Tu sors ton portable",
-            "questions": ["Composer le numéro de la police"],
+            "questions": ["COMPOSER LE NUMERO DE LA POLICE"],
             "responses": ["Ca n'as pas vraiment plu au client. A priori il n'ai pas vraiment amis avec la police. Il sort une arme et te tire une balle dans la tete"],
             "redirections": [],
             "image": 0,
@@ -84,7 +84,7 @@
 	  {
             "id": 10,
             "story": "Il te souris l'air satisfait et te dis qu'il te faira un bon pourboire pour remecier ta compréhension. Tu le vois aller au bout de la rue à la rencontre d'un autre homme. Le temps commence a etre long et les 5 minutes sont largement depassées quand tout d'un ton client sort une arme et abat son interlocuteur",
-            "questions": ["Tu prends peur et tu décide de partir", "Tu prends le riques de rester mais tu t'allonges pour pas te prendre de balle perdu"],
+            "questions": ["PARTIR", "SE COUCHER AU SOL"],
             "responses": ["Tu met les plein gazs et tu fonces le plus loin possible", "La fusillade semble etre fini. Tu relève la tete. Tu est sains et sauf mais ta voiture à pris une balle dans le phare arrière. Ton client est revenu et te dis qu'il a noté ta plaque. Il semble vouloir te faire comprendre que si tu parles de quoi que ce soit à quelqu'un il s'occupera de te faire taire. Il remonte dans ta voiture et tu n'as pas vraiment d'autre choix que de le rammener. En partant il te donne une grosse liasse de billet pour te remercier de ta discretion"],
             "redirections": [11, 12],
             "image": 0,
@@ -93,7 +93,7 @@
 	  {
             "id": 11,
             "story": "Dans ta course folle tu entends une sirène de police derrière toi. Tu t'arretes et le policier te fait remarquer que tu roule bien au dessus de la limite de vitesse.",
-            "questions": ["Tu lui raconte la vérité", "Tu inventes une excuse"],
+            "questions": ["DIRE LA VERITE", "INVENTER UNE EXCUSE"],
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation."],
             "redirections": [14, 13],
             "image": 3,
@@ -101,7 +101,7 @@
         }, {
             "id": 12,
             "story": "Cette journée t'as vraiment fatigué, il est temps de rentrer chez toi. Malheuresement sur le chemin du retour tu croises un controle de police et il t'arrete pour rouler avec un feu cassé.",
-            "questions": ["Tu lui raconte la vérité", "Tu inventes une excuse"],
+            "questions": ["DIRE LA VERITE", "INVENTER UNE EXCUSE"],
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation."],
             "redirections": [14, 13],
             "image": 4,
@@ -109,7 +109,7 @@
         }, {
             "id": 13,
             "story": "L'imagination c'est vraiment pas ton truc, tu inventes une histoire qui tient absolument pas debout et le policier ne te crois absolument pas. D'un autre coté tu risque ta vie si tu racontes la vérité. Il te fait comprendre qu'il aime bien l'argent et que quelque billets pourrait te sortir d'affaire",
-            "questions": ["Tu te résouds à raconter toute la vérité.", "Tu lui donnes ta liasse de billet"],
+            "questions": ["DIRE LA VERITE", "DONNER UNE LIASSE DE BILLET"],
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'était ton premier client. Vous commencez a entretenir une bonne relation."],
             "redirections": [14 , 15],
             "image": 5,
@@ -118,7 +118,7 @@
         {
             "id": 14,
             "story": "La journée à été longue et épuisante. Tu vas te coucher et demain te reprends le boulot parcequ'il faut bien gagner sa vie.",
-            "questions": ["Continuer"],
+            "questions": ["CONTINUER"],
             "responses": [],
             "redirections": [15],
             "image": 6,
@@ -127,7 +127,7 @@
         {
             "id": 15,
             "story": "Tu reprends le volant après une bonne nuit de sommeil. Pas de temps à perdre, tu as déjà le premier client de la journée qui t'attends. Le client est une femme plutot jeune et elle a l'air plutot fatigué.",
-            "questions": ["Engager la conversation"],
+            "questions": ["ENGAGER LA CONVERSATION"],
             "responses": ["Elle hésite quelques seconde avant de te répondre. Elle commence à te raconter qu'elle essait de fuir sa maison pour commencer une nouvelle vie loin de son passé... Mais elle n'a pas le temps de finir sa phrase, une voiture juste derrière toi klaxone avec insistance."],
             "redirections": [16], 
             "image": 6,
@@ -136,7 +136,7 @@
         {
             "id": 16,
             "story": "Tu regardes dans le rétroviseur. La voiture qui te suit te fais des appels de phares et tu comprends qu'elle veut que tu t'arretes. Ta cliente te dis qu'elle reconnait la voiture et qu'il s'agit de son père qui est surement à sa recherche. Elle te supplit de l'ignorer et d'essayer de le semer.",
-            "questions": ["Tu prends parti de ta cliente.", "Tu as vécu trop d'aventures hier, tu ne prends pas de risque et tu t'arretes pour t'expliquer avec le conducteur."],
+            "questions": ["PRENDRE LE PARTI DE LA CLIENTE", "S'ARRETER POUR PARLER AVEC LE CONDUCTEUR"],
             "responses": ["Tu accelère mais la voiture continue de suivre", "Tu expliques à ta cliente que tu prefères respecter les limites de vitesse pour éviter les accident. Tu penses que le dialogue résoud les problèmes et tu attends que le conducteur vienne à ta fenêtre."],
             "redirections": [18, 17],
             "image": 7,
@@ -145,7 +145,7 @@
         {
             "id": 17,
             "story": "Tu vois un homme sortir de la voiture. Tu regarde son visage et ton sang se glace. Tu reconnais le meurtrier de la journée précédente. Tu as à peine le temps de réaliser qu'il toque déjà à ta fênetre et te demande de déverouiller la porte.",
-            "questions": ["Tu lui ouvre", "Tu tentes de fuire en voiture"],
+            "questions": ["OUVRIR LA PORTE", "FUIR EN VOITURE"],
             "responses": ["Tu ouvre la porte. L'homme est reconnaissant. Quand soudain ta cliente se met a crier au secours par la fenêtre. Une voiture de police qui passait juste à quelque mètres déclenche sa sirène. L'homme rentre immédiatemment dans ta voiture et te met un pistolet sur la tempe. Il te dit de t'enfuir et tu n'as pas d'autre choix de t'executer. Derrière toi la police te suit toujours.", "Tu fais mine d'ouvrir la porte et d'un coup de redémarre la voiture. Bravo très bonne stratégie. Tu as gagner quelque seconde et tu roules maintenant à toute vitesse. Tu jettes un coup d'oeuil derrière toi, l'homme à eu le temps de remonter dans sa voiture et te suit de près."],
             "redirections": [18, 18],
             "image": 8,
@@ -154,7 +154,7 @@
         {
             "id": 18,
             "story": "Tu es enguagé dans une course poursuite. L'avantage c'est que tu connait très bien la ville. Tu sais qu'en tournant a droite il y aura une petite rue ou tu aura une chance de pouvoir te cacher. A gauche une rue assez large qui te permettra d'accélérer facilemment et peut distancer ton poursuivant",
-            "questions": ["Tu tournes a droite", "Tu prends à gauche"],
+            "questions": ["TOURNER A DROITE", "TOURNER A GAUCHE"],
             "responses": [],
             "redirections": [19, 20],
             "image": 8,
@@ -163,7 +163,7 @@
         {
             "id": 19,
             "story": "Tu te retouve sur une petite route à l'abris des regards. Tu ne peux qu'espèrer que tu n'as pas été vue. Tu arretes la voiture et tu sors pour rester discret. Tu te met à courir tout droit sans t'arreter. Alors que tu pensais être tiré d'affaire, tu entends une voix derrière toi qui te demande te t'arreter.",
-            "questions": ["Tu continus à courir", "tu t'arretes"],
+            "questions": ["CONTINUER", "S'ARRETER"],
             "responses": ["Tu n'écoutes pas et tu continues à courir. Tu commences à entendre des coups de feu. D'un coup tu t'éfondre par terre, tu regardes ta poitrine, elle est en sang. Tu as été touché par une balle et tu perds connaissance.", "Tu t'arretes et au même moment tu entends un coup de feu. D'un coup tu t'éfondre par terre, tu regardes ta poitrine, elle est en sang. Tu as été touché par une balle et tu perds connaissance."],
             "redirections": [],
             "image": 10,
@@ -171,7 +171,7 @@
         }, {
             "id": 20,
             "story": "Tu es sur une grande route et tu accélère le plus vite possible. A cette vitesse tu est sur d'avoir semer ton poursuivant.",
-            "questions": ["Tu vérifies dans le retoviseur que plus personne te poursuis"],
+            "questions": ["VERIFIER DANS LE RETROVISEUR QUE PERSONNE NE SUIT"],
             "responses": ["Tu regarde le rétroviseur et il semble en effet que tu sois sorti d'affaire. Mais au moment ou tu regarde à nouveau la route une voiture venant de la droite te rentre dedans. Le choc est très violent et tu perds connaissance."],
             "redirections": [],
             "image": 11,
