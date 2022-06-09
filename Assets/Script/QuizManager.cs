@@ -34,6 +34,8 @@ public class QuizManager : MonoBehaviour {
     public AudioSource audioSource;
     private Questions questionsList;
     private Question currentQuestion;
+    
+    public Timer timer1;
 
     // Utiliser ça pour incrementer la barre de la police 
     // setFlicDetection(2);
@@ -44,6 +46,7 @@ public class QuizManager : MonoBehaviour {
         currentQuestionId = 1;
         buttonClickedId = 0;
         GoPanel.SetActive(false);
+        timer1.SetDuration(45).Begin();
         generateQuestion();
     }
 
