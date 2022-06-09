@@ -12,6 +12,9 @@ public class QuizManager : MonoBehaviour {
     public class Questions {
         public Question[] questions;
     }
+	public int currentHealth = 0;
+    public int maxHealth = 10;
+	public HealthBar healthBar;
 
     public TextAsset textJSON;
     public GameObject[] options;
@@ -35,6 +38,9 @@ public class QuizManager : MonoBehaviour {
     private Questions questionsList;
     private Question currentQuestion;
 
+    // Utiliser ça pour incrementer la barre de la police 
+    // setFlicDetection(2);
+
     private void Start() {
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
         numberOfQuestions = questionsList.questions.Count();
@@ -44,6 +50,11 @@ public class QuizManager : MonoBehaviour {
         GoPanel.SetActive(false);
         generateQuestion();
     }
+
+    void setFlicDetection(int damage) {
+		currentHealth += damage;
+		healthBar.SetHealth(currentHealth);
+	}
 
     public void playSound() {
         disableButton();
@@ -137,7 +148,6 @@ public class QuizManager : MonoBehaviour {
 
     public void setButtonId(int id) {
         this.buttonClickedId = id;
-
         // Play music condition a definir un array de int pas la meilleur solution..
         // peut etre deux champs différent.. ou un nombre pour dire pas de musique
         if (currentQuestion.songsId.Length > 0) {
@@ -174,9 +184,9 @@ public class QuizManager : MonoBehaviour {
 
     void generateQuestion() {
         if (currentQuestionId != 0) {
-            setBackgroundImage();
             currentQuestion = Array.Find(this.questionsList.questions, q => q.id == currentQuestionId);
             QuestionText.text = currentQuestion.story;
+            setBackgroundImage();
             setAnswers();
             if (currentQuestion.newCourse == true) { displayNewCourse(); }
         } else {
