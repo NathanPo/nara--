@@ -33,11 +33,15 @@ public class QuizManager : MonoBehaviour {
     private Questions questionsList;
     private Question currentQuestion;
 
+    [SerializeField] private UI_Inventory uiInventory;
+    private Inventory inventory;
+
     public Timer timer1;
     // Utiliser ça pour incrementer la barre de la police 
     // setHealth(2);
 
     private void Start() {
+        inventory = new Inventory();
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
         numberOfQuestions = questionsList.questions.Count();
         currentQuestionId = 1;
