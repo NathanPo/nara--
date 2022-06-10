@@ -10,6 +10,8 @@ public class Timer : MonoBehaviour {
     public Image uiFillImage;
     public Text uiText;
 
+    public int timeFinished = 0;
+
     public int Duration { get; private set; }
 
     public bool IsPaused { get; private set; }
@@ -23,13 +25,15 @@ public class Timer : MonoBehaviour {
     public void ResetTimer () {
       uiText.text = "00:00" ;
       uiFillImage.fillAmount = 0f;
+      timeFinished = 0;
 
       Duration = remainingDuration = 0;
    }
 
     public Timer SetDuration (int seconds) {
-      Duration = remainingDuration = seconds ;
-      return this ;
+        timeFinished = 1;
+        Duration = remainingDuration = seconds ;
+        return this ;
    }
 
    public void Begin() {

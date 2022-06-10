@@ -38,6 +38,11 @@ public class QuizManager : MonoBehaviour {
 
     public Timer timer1;
 
+    private int interval = 1; 
+    private float nextTime = 0;
+    private bool weAreOnDisplayResponse = false;
+
+
     private void Start() {
         inventory = new Inventory();
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
@@ -45,13 +50,13 @@ public class QuizManager : MonoBehaviour {
         currentQuestionId = 1;
         buttonClickedId = 0;
         GoPanel.SetActive(false);
-        timer1.SetDuration(45).Begin();
+        timer1.SetDuration(35).Begin();
         generateQuestion();
     }
 
     void resetAndStartTimer() {
-        timer1.SetDuration(35).Begin();
         timer1.ResetTimer();
+        timer1.SetDuration(35).Begin();
     }
 
     public void playSound() {
@@ -82,7 +87,26 @@ public class QuizManager : MonoBehaviour {
         options[2].GetComponent<Button>().interactable = true;
     }
 
+    void Update() {
+        if (Time.time >= nextTime) {
+            if (timer1.timeFinished == 0) {
+                if (weAreOnDisplayResponse == false) {
+                    if (currentQuestion.questions.Length == 2) {
+                        setButtonId(UnityEngine.Random.Range(0,1));
+                    } else {
+                        setButtonId(2);
+                    }
+                } else {
+                    nextQuestion();
+                }
+            }
+            nextTime += interval; 
+        }
+    }
+
     public void nextQuestion() {
+        weAreOnDisplayResponse = false;
+        resetAndStartTimer();
         questionsGameObject.SetActive(true);
         resultGameObject.SetActive(false);
         generateQuestion();
@@ -122,6 +146,7 @@ public class QuizManager : MonoBehaviour {
     }
 
     void displayResponse() {
+        weAreOnDisplayResponse = true;
         questionsGameObject.SetActive(false);
         resultGameObject.SetActive(true);
     }
@@ -151,7 +176,7 @@ public class QuizManager : MonoBehaviour {
 
     void afterClickerOnQuestionButton() {
         setQuestionId(buttonClickedId);
-
+        resetAndStartTimer();
         if (currentQuestion.responses.Length > 0) {
             displayResponse();
             if (currentQuestion.responses.Length > 1) {
