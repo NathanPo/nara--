@@ -64,18 +64,16 @@ public class QuizManager : MonoBehaviour
         currentQuestionId = 1;
         buttonClickedId = 0;
         GoPanel.SetActive(false);
-        timer1.SetDuration(35).Begin();
+        timer1.SetDuration(25).Begin();
         generateQuestion();
     }
 
-    void resetAndStartTimer()
-    {
+    void resetAndStartTimer() {
         timer1.ResetTimer();
-        timer1.SetDuration(35).Begin();
+        timer1.SetDuration(25).Begin();
     }
 
-    public void playSound()
-    {
+    public void playSound() {
         disableButton();
         audioSource.clip = songs[currentQuestion.songsId[buttonClickedId]];
         audioSource.Play();

@@ -108,7 +108,7 @@
             "redirections": [11, 12],
             "image": 2,
             "health": [-1,1],
-            "songsId": []
+            "songsId": [1]
         },
 	  {
             "id": 11,
