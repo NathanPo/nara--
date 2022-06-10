@@ -26,7 +26,7 @@
             "questions": ["La famille", "Le travail"],
             "responses": [],
             "redirections": [4, 5],
-            "image": 0,
+            "image": 4,
             "health": [0,0],
             "songsId": []
         },
@@ -36,7 +36,7 @@
             "questions": ["Quel genre de travail?", "Ah je vois"],
             "responses": [],
             "redirections": [5, 5],
-            "image": 0,
+            "image": 4,
             "health": [0,0],
             "songsId": []
         },
@@ -46,7 +46,7 @@
             "questions": ["C'est la première fois que j'entends ce nom, si j'ai des informations je vous les enverrai", "Dans mon métier il vaut mieux rester discret"],
             "responses": ["Tu finis ta course sans ajouter un mot de plus. Savoir rester discret est la clé de ce métier et on dirait que tu es fait pour ce boulot."],
             "redirections": [6, 6],
-            "image": 0,
+            "image": 3,
             "health": [-1,1],
             "songsId": []
         },
@@ -56,7 +56,7 @@
             "questions": ["Le transfert de Mbappé au PSG", "Vous ne seriez pas un acteur connu par hasard?"],
             "responses": ["Aucune réponse. Tu jette un œil au rétroviseur arrière pour voir si tout va bien. Un frisson parcourt ton corps lorsque tu croises son regard froid et son visage fermé. L'homme ne respire pas la joie. Concentres-toi sur la route lâche-t-il"],
             "redirections": [7,7],
-            "image": 0,
+            "image": 7,
             "health": [0,0],
             "songsId": []
         },
@@ -66,7 +66,7 @@
             "questions": ["J'ai une autre course qui s'enchaine", "Ok chef"],
             "responses": [],
             "redirections": [8, 10],
-            "image": 0,
+            "image": 7,
             "health": [-1,1],
             "songsId": []
         },
@@ -76,7 +76,7 @@
             "questions": ["La course d'après viens juste de s'annuler", "Appeler la police"],
             "responses": [],
             "redirections": [10, 9],
-            "image": 0,
+            "image": 7,
             "health": [1,-1],
             "songsId": []
         },
@@ -96,7 +96,7 @@
             "questions": ["Continuer"],
             "responses": [],
             "redirections": [101],
-            "image": 0,
+            "image": 8,
             "health": [0,0],
             "songsId": []
         },
@@ -106,7 +106,7 @@
             "questions": ["Prendre la fuite", "Rester"],
             "responses": ["Tu met les plein gazs et tu fonces le plus loin possible", "Tu t'allonges pour ne pas prendre de balle perdue… Après des minutes qui semblent interminables, les tirs cessent. Tu relève la tête et sors pour constater les dégâts. Ta voiture à pris une balle dans le phare arrière. Ton client reviens vers toi et puis s'installe à l'arrière, impassible. Tu n'as pas vraiment d'autre choix que de terminer la course. En partant, il te tend une liasse de billets, le prix de ton silence"],
             "redirections": [11, 12],
-            "image": 0,
+            "image": 2,
             "health": [-1,1],
             "songsId": []
         },
@@ -116,7 +116,7 @@
             "questions": ["Raconter la vérité", "Inventer une excuse"],
             "responses": ["Le policier t'accompagne au poste ou tu raconte toute ton histoire en détail. Tu reconnais alors l'enquêteur, qui n'est autre que ton premier client. Vous commencez à entretenir une bonne relation"],
             "redirections": [14, 13],
-            "image": 3,
+            "image": 9,
             "health": [-1,1],
             "songsId": []
         }, {
@@ -125,7 +125,7 @@
             "questions": ["Tu lui raconte la vérité", "Tu inventes une excuse"],
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation"],
             "redirections": [14, 13],
-            "image": 4,
+            "image": 9,
             "health": [-1,1],
             "songsId": []
         }, {
@@ -134,7 +134,7 @@
             "questions": ["Raconter la vérité", "Soudoyer"],
             "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation"],
             "redirections": [14 , 15],
-            "image": 5,
+            "image": 9,
             "health": [-1,1],
             "songsId": []
         },
@@ -144,7 +144,7 @@
             "questions": ["Continuer"],
             "responses": [],
             "redirections": [15],
-            "image": 6,
+            "image": 4,
             "health": [0,0],
             "songsId": []
         },
@@ -164,7 +164,7 @@
             "questions": ["Tu enfonces la pedale d'accélération", "Tu as vécu trop d'aventures hier, tu ne prends pas de risque et tu t'arretes pour t'expliquer avec le conducteur"],
             "responses": ["Tu accelère mais la voiture continue de suivre", "Tu expliques à ta cliente que tu prefères respecter les limites de vitesse pour éviter les accident. Tu penses que le dialogue résoud les problèmes et tu attends que le conducteur vienne à ta fenêtre"],
             "redirections": [18, 17],
-            "image": 7,
+            "image": 5,
             "health": [0,0],
             "songsId": []
         },
@@ -174,7 +174,7 @@
             "questions": ["Déverrouiller les portes", "Tu redémarres"],
             "responses": ["L'homme saisit la jeune femme par le bras quand soudain elle se met à crier au secours. Une voiture de police qui passait à quelques mètres déclenche sa sirène et se dirige vers vous. L'homme jette la jeune femme sur banquette arrière et rentre à son tour. Il te pointe un pistolet sur la tempe et te dit de rouler, tu n'as pas d'autre choix que de t'exécuter. La police se met à ta poursuite","Tu fais mine d'ouvrir la porte et tu redémarres la voiture. Tu as gagné quelques secondes et tu roules maintenant à toute vitesse. Tu jettes un coup d'œil derrière toi, l'homme à eu le temps de remonter dans sa voiture et te suit de près"],
             "redirections": [18, 18],
-            "image": 8,
+            "image": 7,
             "health": [1,-1],
             "songsId": []
         },
@@ -184,7 +184,7 @@
             "questions": ["Tourner à droite et se cacher dans une petite rue", "Tourner à droite sur le boulevard pour accélérer et distancer ses poursuivants"],
             "responses": [],
             "redirections": [19, 20],
-            "image": 8,
+            "image": 3,
             "health": [0,0],
             "songsId": []
         },
@@ -194,7 +194,7 @@
             "questions": ["Tu continues à courir", "Tu t'arrêtes"],
             "responses": ["Tu entends un coups de feu et tu t'effondres par terre, tu regardes ta  chemise qui commence à se couvrir de sang. Tu as été touché par une balle et tu perds lentement connaissance"],
             "redirections": [],
-            "image": 10,
+            "image": 2,
             "health": [0,0],
             "songsId": []
         }, {
@@ -203,7 +203,7 @@
             "questions": ["Tu vérifies à nouveau dans le rétroviseur que plus personne ne te poursuit"],
             "responses": ["Tu regardes le rétroviseur et il semble en effet que tu sois sorti d'affaire. Sans crier gare une voiture venant de la droite te percute. Le choc est si violent que tu perds connaissance"],
             "redirections": [],
-            "image": 11,
+            "image": 3,
             "health": [0,0],
             "songsId": []
         }

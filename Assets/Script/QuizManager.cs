@@ -17,7 +17,7 @@ public class QuizManager : MonoBehaviour {
     public TextAsset textJSON;
     public GameObject[] options;
     // Prendre d'autre image correspondant au situation
-    string[] images = {"airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger","airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger"};
+    string[] images = {"airport_taxi", "convoque", "gangster_gun", "taxi1", "taxi_driver", "taxi_passenger","taxi2", "mec_louche", "street_man", "police_car"};
     Sprite backgroundImages;
     private int currentQuestionId;
     private int numberOfQuestions;
