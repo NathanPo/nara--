@@ -24,4 +24,8 @@ public class HealthBar : MonoBehaviour {
 	public int GetHealth() {
 		return (int)Math.Round(this.slider.value);
 	}
+
+	// public void Disable() {
+	// 	this.slider.SetActive(false);
+	// }
 }

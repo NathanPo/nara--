@@ -193,7 +193,7 @@
             "story": "Tu te retouve sur une petite route à l'abris des regards. Tu ne peux qu'espèrer que tu n'as pas été vue. Tu arretes la voiture et tu sors pour rester discret. Tu te met à courir tout droit sans t'arreter. Alors que tu pensais être tiré d'affaire, tu entends une voix derrière toi qui te demande te t'arreter",
             "questions": ["Tu continues à courir", "Tu t'arrêtes"],
             "responses": ["Tu entends un coups de feu et tu t'effondres par terre, tu regardes ta  chemise qui commence à se couvrir de sang. Tu as été touché par une balle et tu perds lentement connaissance"],
-            "redirections": [],
+            "redirections": [0],
             "image": 2,
             "health": [0,0],
             "songsId": []
@@ -202,7 +202,7 @@
             "story": "Tu es sur un boulevard et tu accélère à fond. Grâce à son puissant moteur, ton véhicule a vite fait de semer ses poursuivants",
             "questions": ["Tu vérifies à nouveau dans le rétroviseur que plus personne ne te poursuit"],
             "responses": ["Tu regardes le rétroviseur et il semble en effet que tu sois sorti d'affaire. Sans crier gare une voiture venant de la droite te percute. Le choc est si violent que tu perds connaissance"],
-            "redirections": [],
+            "redirections": [0],
             "image": 3,
             "health": [0,0],
             "songsId": []
