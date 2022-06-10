@@ -33,7 +33,7 @@ public class QuizManager : MonoBehaviour {
     private Questions questionsList;
     private Question currentQuestion;
 
-    [SerializeField] private UI_Inventory uiInventory;
+    public UI_Inventory uiInventory;
     private Inventory inventory;
 
     public Timer timer1;
@@ -101,7 +101,15 @@ public class QuizManager : MonoBehaviour {
     void setAnswers() {
         if (currentQuestion.questions.Length == 2) {
             options[0].SetActive(true);
-            options[1].SetActive(true);
+            if (currentQuestionId == 13)
+            {
+                options[1].SetActive(inventory.hasItem(Inventory.Item.Money));
+            }
+            else
+            {
+                options[1].SetActive(true);
+            }
+            
             options[2].SetActive(false);
             options[0].transform.GetChild(0).GetComponent<Text>().text = currentQuestion.questions[0];
             options[1].transform.GetChild(0).GetComponent<Text>().text = currentQuestion.questions[1];
@@ -151,6 +159,17 @@ public class QuizManager : MonoBehaviour {
 
     void afterClickerOnQuestionButton() {
         setQuestionId(buttonClickedId);
+
+        if (currentQuestion.id == 101 && buttonClickedId == 1)
+        {
+            inventory.addItem(Inventory.Item.Money);
+            uiInventory.setInventory(inventory);
+        }
+        if (currentQuestion.id == 13 && buttonClickedId == 1)
+        {
+            inventory.removeItem(Inventory.Item.Money);
+            uiInventory.setInventory(inventory);
+        }
 
         if (currentQuestion.responses.Length > 0) {
             displayResponse();

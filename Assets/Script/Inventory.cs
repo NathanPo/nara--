@@ -16,14 +16,20 @@ public class Inventory
     public Inventory()
     {
         itemList = new List<Item>();
-        itemList
-            .Add(Item.Money);
-        itemList.Add(Item.PoliceContact);
 
     }
 
     public void addItem(Item item)
         { itemList.Add(item); }
+    public void removeItem(Item item)
+    {
+        itemList.Remove(item);
+    }
+
+    public bool hasItem(Item item)
+    {
+        return itemList.Contains(item);
+    }
 
     public List<Item> getItemList()
     { return itemList; }

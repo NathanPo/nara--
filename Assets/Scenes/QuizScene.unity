@@ -2284,7 +2284,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cb7c96bde567245f7b861ccc58448b57, type: 3}
   - {fileID: 8300000, guid: 95a54339b556f44bfa62f6fb2313e8f4, type: 3}
   audioSource: {fileID: 940874621}
-  uiInventory: {fileID: 0}
+  uiInventory: {fileID: 1175626181}
   timer1: {fileID: 263148085}
 --- !u!4 &940874620
 Transform:
@@ -2735,7 +2735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135707751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59, y: 460, z: 0}
+  m_LocalPosition: {x: 59, y: 370, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2769,7 +2769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151732234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.1, y: 368.9, z: 0}
+  m_LocalPosition: {x: 59.1, y: 459, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
