@@ -10,11 +10,12 @@ using UnityEngine.SceneManagement;
 public class QuizManager : MonoBehaviour
 {
     [System.Serializable]
-    public class Questions
-    {
+    public class Questions {
         public Question[] questions;
     }
     public GameObject healthBarObject;
+    public GameObject InvetoryObject;
+    
     public HealthBar healthBar;
     public TextAsset textJSON;
     public GameObject[] options;
@@ -55,8 +56,8 @@ public class QuizManager : MonoBehaviour
     }
 
 
-    private void Start()
-    {
+    private void Start() {
+        InvetoryObject.SetActive(false);
         inventory = new Inventory();
         questionsList = JsonUtility.FromJson<Questions>(textJSON.text);
         numberOfQuestions = questionsList.questions.Count();
@@ -142,8 +143,7 @@ public class QuizManager : MonoBehaviour
     }
 
 
-    void GameOver(int end)
-    {
+    void GameOver(int end) {
         Debug.Log("Will GameOver"+end);
         Sprite backgroundGOImages = Resources.Load<Sprite>(GOImages[end]);
         GoPanel.GetComponent<Image>().sprite = backgroundGOImages;
@@ -151,6 +151,7 @@ public class QuizManager : MonoBehaviour
         GoPanel.SetActive(true);
         healthBarObject.SetActive(false);
         timerObject.SetActive(false);
+        InvetoryObject.SetActive(false);
     }
 
     public void retry()
@@ -244,6 +245,7 @@ public class QuizManager : MonoBehaviour
         resetAndStartTimer();
         if (currentQuestion.id == 101 && buttonClickedId == 1)
         {
+            InvetoryObject.SetActive(true);
             inventory.addItem(Inventory.Item.Money);
             uiInventory.setInventory(inventory);
         }
@@ -251,6 +253,7 @@ public class QuizManager : MonoBehaviour
         {
             inventory.removeItem(Inventory.Item.Money);
             uiInventory.setInventory(inventory);
+            InvetoryObject.SetActive(false);
         }
 
         if (currentQuestion.responses.Length > 0) {
