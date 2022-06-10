@@ -132,7 +132,7 @@
             "id": 13,
             "story": "L'imagination ce n'est vraiment pas ton truc, ton histoire de taxi et de mafia semble sortie d'un jeu vidéo. Le policier semble très suspicieux à ton égard, quelques billets pourraient faire passer ton histoire",
             "questions": ["Raconter la vérité", "Soudoyer"],
-            "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation"],
+            "responses": ["Le policier te ramène au poste ou tu raconte toute ton histoire en details. Tu reconnais l'enqueteur, c'etait ton premier client. Vous commencez a entretenir une bonne relation", "Vous glissez la liasse de billet dans votre permis de conduire en le donnant a l'agent, celui-ci fait mine de verifier le document avant de vous lacher: Circulez y a rien a voir"],
             "redirections": [14 , 15],
             "image": 9,
             "health": [-1,1],
